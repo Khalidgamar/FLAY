@@ -577,7 +577,7 @@
             evt.preventDefault(); // يمنع إعادة تحميل الصفحة
 
             // استدعاء القيم من النموذج بشكل مباشر باستخدام العناصر
-            const formmail = loginForm.querySelector('input[name="email"]').value; // استدعاء البريد الإلكتروني
+            const formmail = loginFormm.querySelector('input[name="email"]').value; // استدعاء البريد الإلكتروني
 
             await pe.setPerson({ email: formmail }); // تحديد هوية الشخص عبر البريد الإلكتروني
             await pe.track('Login');
